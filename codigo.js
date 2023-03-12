@@ -15,9 +15,8 @@ try {
     }
 } catch (error) {
     // Código que maneja la excepción
-    throw new Error("Mensaje de error personalizado");
-}
 
+}
 
 try {
     // Código que puede generar una excepción
@@ -55,10 +54,8 @@ try {
     }
 
 } catch (error) {
-    throw new Error("Mensaje de error personalizado");
+
 }
-
-
 
 try {
 
@@ -72,9 +69,7 @@ try {
     }
 } catch (error) {
     // Código que maneja la excepción
-    throw new Error("Mensaje de error personalizado");
 }
-
 
 try {
 
@@ -87,5 +82,54 @@ try {
     }
 } catch (error) {
     // Código que maneja la excepción
-    throw new Error("Mensaje de error personalizado");
+}
+
+try {
+
+    var boton = document.getElementById("for");
+    boton.addEventListener("click", ejemploFor);
+
+    function ejemploFor() {
+
+        for (let i = 0; i <= 10; i++) {
+            alert(i);
+        }
+    }
+
+} catch (error) {
+    // Código que maneja la excepción
+}
+
+
+try {
+    var boton = document.getElementById("while");
+    boton.addEventListener("click", ejemploWhile);
+
+    function ejemploWhile() {
+
+        let i = 0;
+        while (i < 3) { // muestra 0, luego 1, luego 2
+            alert(i);
+            i++;
+        }
+    }
+
+} catch (error) {
+    // Código que maneja la excepción
+}
+
+try {
+    var boton = document.getElementById("dowhile");
+    boton.addEventListener("click", ejemploDoWhile);
+
+    function ejemploDoWhile() {
+
+        let i = 0;
+        while (i < 5) { // muestra 0, luego 1, luego 2
+            alert(i);
+            i++;
+        }
+    }
+} catch (error) {
+    // Código que maneja la excepción
 }
